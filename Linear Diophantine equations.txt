@@ -1,0 +1,6 @@
+Equation: ax + by = c
+For linear Diophantine equation equations, integral solutions exist if and only if, the GCD of coefficients of the two variables divides the constant term perfectly.In other words the integral solution exists if, GCD(a ,b) divides c.Thus the algorithm to determine if an equation has integral solution is pretty straightforward. 
+    =>Find GCD of a and b
+    =>Check if c % GCD(a ,b) ==0
+    =>If yes then print Possible
+    =>Else print Not Possible

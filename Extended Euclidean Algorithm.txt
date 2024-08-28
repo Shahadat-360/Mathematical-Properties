@@ -1,0 +1,17 @@
+Extended Euclidean Algorithm: 
+
+Extended Euclidean algorithm also finds integer coefficients x and y such that: 
+ => ax + by = gcd(a, b) 
+ 
+	gcd(a,b)=gcd(b,a%b)
+	gcd(b,a%b)=bx1+(a%b)y1
+	a%b=a-(a/b)*b
+	gcd(b,a%b)=bx1+(a-(a/b)*b)y1;
+	now 
+	ax+by=bx1+(a-(a/b)*b)y1;
+
+From the LHS and RHS we can write 
+	x=y1;
+	y=x1-(a/b)*y1;
+ 
+

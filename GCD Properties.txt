@@ -1,0 +1,98 @@
+------GCD Properties--------
+
+Prop 1:
+LCM of 0 and any number does not exist
+• LCM ( 0 , a ) = Does not exist
+
+Prop 2:
+GCD of 0 and any number is equal to the number itself. (Because all whole numbers are factors of 0. So, a will be also be a factor of 0.)
+• GCD ( 0 , a ) = a
+
+Prop 3:
+LCM of 1 and any number is equal to the number itself
+• LCM ( 1 , a ) = a
+
+Prop 4:
+GCD of 1 and any number is equal to 1
+• GCD ( 1 , a ) = 1
+
+Prop 5:
+Product of two numbers = Product of their LCM and GCD
+• a*b = LCM(a,b) * GCD(a,b)
+
+Prop 6:
+LCM of two numbers is always a multiple of their GCD
+• LCM(a,b) = GCD(a,b) * k [where k is an integer]
+
+Prop 7:
+LCM of two numbers always lies between the larger of the two numbers and the product of those two numbers
+• Larger (a,b) <= LCM (a,b) <= a*b
+
+Prop 8:
+GCD of two numbers is always smaller than or equal to the smaller of those two numbers
+• GCD (a,b) <= Smaller (a,b)
+
+Prop 9:
+LCM of two numbers is equal to the larger of the two numbers when one number is multiple of other
+• LCM(a,b) = Larger(a,b) => either a is a multiple of b or b is a multiple of a
+
+Prop 10:
+LCM of two numbers is equal to the product of those two numbers when the numbers are co-prime
+• LCM(a,b) = a*b => a and b are co-prime numbers
+Co-prime numbers are numbers which have only one factor in common (i.e. 1)
+
+Prop 11:
+GCD of two numbers is equal to the smaller of the two numbers when one number is multiple of other
+• GCD(a,b) = Smaller(a,b) => either a is a multiple of b or b is a multiple of a
+
+Prop 12:
+GCD of two numbers is 1 when the numbers are co-prime
+• GCD(a,b)=1 => a and b are co-prime numbers
+
+Prop 13:
+All numbers can be written as a multiple of their GCD
+• a and b can be written as a multiple of their GCD
+• a = GCD(a,b) * k [where k is an integer]
+• b = GCD(a,b) * t [where t is an integer]
+
+Prop 14:
+All multiples of LCM are divisible by the numbers whose LCM we have calculated
+• Multiples of LCM(a,b) will be divisible by both a and b
+
+Prop 15:
+a + b and a -b will always be divisible by GCD(a,b)
+• (a+b)/GCD(a,b)=k [where k is an integer]
+• (a−b)/GCD(a,b)=t [where t is an integer]
+
+-------------
+
+Gcd(a,b) where both a and b are non-zero, can also be defined as the smallest positive integer d which can be a solution/which can be expressed as a linear combination of a and b in the form d=a*p + b*q, where both p and q are integers.
+
+If 'a' divides b*c and gcd(a,b)=d , then a/d divides c.
+
+If m is a non-negative integer, then gcd(m⋅a, m⋅b) = m⋅gcd(a, b).It also follows from this property that if gcd(a,b)=g, then a/g and b/g should be coprime. Try to derive it yourslef.
+
+If m is any integer gcd(a,b)=gcd(a+m*b,b).
+
+The GCD: gcd(a, b) = gcd(b, a%b).
+
+If m is a positive common divisor of a and b, then gcd(a/m, b/m) = gcd(a, b)/m.
+
+GCD is a multiplicative function. That is if a1 and a2 are coprime gcd(a1*a2,b)=gcd(a1,b)*gcd(a2,b). -1. In particular, recalling that GCD is a positive integer valued function we obtain that gcd(a, b⋅c) = 1 if and only if gcd(a, b) = 1 and gcd(a, c) = 1. if the gcd is one then they need not be coprime to distribute the gcd, morever each gcd invidually should also be 1.
+
+The GCD is a commutative function: gcd(a, b) = gcd(b, a).
+
+The GCD is an associative function: gcd(a, gcd(b, c)) = gcd(gcd(a, b), c). Thus gcd(a, b, c, ...) can be used to denote the GCD of multiple arguments.
+ 
+The following versions of distributivity hold true: gcd(a, lcm(b, c)) = lcm(gcd(a, b), gcd(a, c)) lcm(a, gcd(b, c)) = gcd(lcm(a, b), lcm(a, c)).
+
+• If we have the unique prime factorizations of a = p1^e1*p2^e2 ⋅⋅⋅ pm^em and b = p1^f1*p2^f2 ⋅⋅⋅ pm^fm where ei ≥ 0 and fi ≥ 0, then the GCD of a and b is gcd(a,b) = p1^min(e1,f1) p2^min(e2,f2) ⋅⋅⋅ pm^min(em,fm).
+
+• In a Cartesian coordinate system, gcd(a, b) can be interpreted as the number of segments between points with integral coordinates on the straight line segment joining the points (0, 0) and (a, b).
+
+• For non-negative integers a and b, where a and b are not both zero, provable by considering the Euclidean algorithm in base n it simple states that: gcd(n^a-1,n^b-1)=n^gcd(a,b)-1
+
+• An identity involving Euler's totient function: Gcd(a,b)=∑φ(k) where k are all common divisors of 'a' and 'b'
+
+
+ 
